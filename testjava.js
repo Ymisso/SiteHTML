@@ -1,23 +1,17 @@
 sfHover = function() {
-
-        var sfEls = document.getElementById("menu").getElementsByTagName("LI");
-
-        for (var i=0; i<sfEls.length; i++) {
-
-                sfEls[i].onmouseover=function() {
-
-                        this.className+=" sfhover";
-
+        var sfEls = document.getElementById("nav").getElementsByTagName("li"); //on cherche les elements dans nav qui sont des listes (li)
+        for (var i=0; i<sfEls.length; i++) { //pour chaque element dans cette liste
+                sfEls[i].onmouseover=function() { //si on passe la souris dessus, on écrit "sfhover" dessus
+                    this.className+=" sfhover";
                 }
-
                 sfEls[i].onmouseout=function() {
-
-                        this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
-
+                        this.className=this.className.replace(this.className, ""); //si on sort la souris de dessus, on change le nom
                 }
 
         }
 
 }
 
-if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+
+// http://www.pompage.net/traduction/deroulants

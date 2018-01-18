@@ -1,37 +1,55 @@
-nav {
-    position : fixed;
+body {
+    background-image:linear-gradient(100deg, #2C8791, #AF7CD1 );
+    height : 100%;
     width : 100%;
-    height : 30px;
+}
+
+
+
+/*FENETRE DE NAVIGATION */
+nav {
+    position : fixed; /* pour que la barre reste en haut meme si on descend la fenetre */
+    width : 100%; /*largeur */
+    height : 60px; /*hauteur*/
     font-weight : bold; /* texte en gras*/
     font-family : Arial; /* police : Arial*/
-    font-size : 12px; /* taille de la police : 12px */
+    font-size : 20px; /* taille de la police : 12px */
+    left : 20%;
+
+
 }
 
 nav, nav ul {
     padding : 0; /* pas de marge intérieure */
-    margin : 0; /* ni extérieure */
-    list-style : none; /* on supprime le style par défaut de la liste */
-    line-height : 21px; /* on définit une hauteur pour chaque élément */
+    margin : 0; /* et extérieur -> sinon les menus sont décalés dans la barre */
+    list-style : none; /* enlève les points de la liste */
+    line-height : 30px; /* augmente la hauteur des menus */
     text-align : center; /* texte centré*/
+    
 
 
 }
 
-nav a /* Contenu des listes */
+nav a 
 {
-    display : block; /* on change le type d'élément, les liens deviennent des balises de type block */
-    padding : 0; /* aucune marge intérieure */
-    background : #000; /* couleur de fond */        
+    
+    display : block; /* transforme en bloc les liens (plus facile à manipuler) */
+    border-radius: 10px; /*bord arrondit*
+    /* padding : 0;  */
     color : #fff; /* couleur du texte */
-    text-decoration : none; /* on supprime le style par défaut des liens (la plupart du temps = souligné) */
-    width : 144px; /* largeur */    
+    text-decoration : none; /* enleve les souligne */
+    width : 150px; /* largeur */ 
+    background-color : rgba(255,255,255,0.3);
+    
 }
 
 nav li /* Éléments des listes */      
 
 { 
-    float : left; 
-    border-right : 1px solid #fff; /* on met une bordure blanche à droite de chaque élément */
+    float : left; /*mettre les elements a la suite des autres à gauche*/
+    border-right : 1px solid #fff; /* bordure blanche à droite de chaque élément */
+    border-top : 1px solid #fff;
+    border-radius: 10px; /*bord arrondit*/
 
 }
 
@@ -42,22 +60,18 @@ nav li ul /* Sous-listes */
     left: -999em; /* Hop, on envoie loin du champ de vision */
 }
 
-nav li ul li /* Eléments de sous-listes */
-{
-    border-top : 1px solid #fff; /* on met une bordure blanche en haut de chaque élément d'une sous-liste */
-}
 
-nav li ul ul 
+nav li ul ul /*Sous-sous liste */
 
 {
-    margin    : -22px 0 0 144px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
-    border-left     : 1px solid #fff ; /* Petite bordure à gauche pour ne pas coller ... */      
+    margin    : -22px 0 0 160px ; /* On décale les sous-sous-listes pour qu'elles ne soient pas au dessus des sous-listes */ 
 }
 
-nav li:hover ul ul, #menu li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
+nav li:hover ul ul, nav li.sfhover ul ul /* Sous-sous-listes lorsque la souris passe sur un élément de liste */
 
 {
     left: -999em; /* On expédie les sous-sous-listes hors du champ de vision */
+
 }
 
 
@@ -68,6 +82,6 @@ nav li:hover ul, nav li li:hover ul, nav li.sfhover ul, nav li li.sfhover ul  /*
 
 }
 
-
+/*****************************/
 
 
