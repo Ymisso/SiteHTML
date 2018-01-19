@@ -1,6 +1,12 @@
-/*table.quizz{
-            */
-            
+article.quizz {
+                height:70%;
+                width:75%;
+              }
+
+img.imqz    {
+           height:50%; 
+           width:35%;
+         }            
 
 
 body {
