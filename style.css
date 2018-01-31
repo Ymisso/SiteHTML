@@ -1,4 +1,18 @@
-article.quizz {
+article {
+    position : fixed; /* pour que la barre reste en haut meme si on descend la fenetre */
+    width : 30%; /*largeur */
+    height : 60px; /*hauteur*/
+    background-color: rgba(0, 0, 255, 0.1); /*un arrière plan bleu à 10% de transparence */
+    font-family : Arial; /* police : Arial*/
+    font-size : 20px; /* taille de la police : 12px */
+    top : 100px ;
+    left : 600px;
+
+}
+
+
+
+aside.quizz {
                 height:70%;
                 width:75%;
               }
