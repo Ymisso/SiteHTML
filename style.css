@@ -6,14 +6,14 @@ article {
     font-family : Arial; /* police : Arial*/
     font-size : 20px; /* taille de la police : 12px */
     top : 100px ;
-    left : 600px;
+    left : 550px;
 
 }
 
 
 
-aside.quizz {
-                height:70%;
+aside.quiz {
+		        height:70%;
                 width:75%;
               }
 

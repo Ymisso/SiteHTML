@@ -1,0 +1,121 @@
+    .rouge{
+    background-color:red;
+    position : absolute ;
+    top : 0px ;
+    left : 50px;
+    height : 80px;
+    width : 650px;
+    text-align: center;
+    }
+
+    .vert{
+    background-color:green;
+    position : absolute ;
+    top : 80px ;
+    left : 50px;
+    height : 400px;
+    width : 180px;
+    text-align: center;
+    }
+
+    .magenta{
+    background-color:magenta;
+    position : absolute ;
+    top : 80px ;
+    left : 230px;
+    height : 320px;
+    width : 300px;
+    text-align: center;
+    }
+
+    .rose{
+    background-color:pink;
+    position : absolute ;
+    top : 400px ;
+    left : 230px;
+    height : 80px;
+    width : 300px;
+    text-align: center;
+    }
+
+    .jaune{
+    Font-size: small;
+    background-color:yellow;
+    position : absolute ;
+    top : 80px ;
+    left : 530px;
+    height : 100px;
+    width : 170px;
+    text-align: center;
+    }
+
+    .cyan{
+    Font-size: small;
+    background-color:cyan;
+    position : absolute ;
+    top : 180px ;
+    left : 530px;
+    height : 300px;
+    width : 170px;
+    text-align: center;
+    }
+
+
+
+
+
+
+
+body {
+    background-image:linear-gradient(100deg, #2C8791, #AF7CD1 );
+    height : 100%;
+    width : 100%;
+}
+
+
+
+/*FENETRE DE NAVIGATION */
+nav {
+    position : fixed; /* pour que la barre reste en haut meme si on descend la fenetre */
+    width : 100%; /*largeur */
+    height : 60px; /*hauteur*/
+    font-weight : bold; /* texte en gras*/
+    font-family : Arial; /* police : Arial*/
+    font-size : 20px; /* taille de la police : 12px */
+    left : 20%;
+
+
+}
+
+nav, nav ul {
+    padding : 0; /* pas de marge intérieure */
+    margin : 0; /* et extérieur -> sinon les menus sont décalés dans la barre */
+    list-style : none; /* enlève les points de la liste */
+    line-height : 30px; /* augmente la hauteur des menus */
+    text-align : center; /* texte centré*/
+    
+
+
+}
+
+nav a 
+{
+    
+    display : block; /* transforme en bloc les liens (plus facile à manipuler) */
+    border-radius: 10px; /*bord arrondit*
+    /* padding : 0;  */
+    color : #fff; /* couleur du texte */
+    text-decoration : none; /* enleve les souligne */
+    width : 150px; /* largeur */ 
+    background-color : rgba(255,255,255,0.3);
+    
+}
+
+nav li /* Éléments des listes */      
+
+{ 
+    float : left; /*mettre les elements a la suite des autres à gauche*/
+    border-right : 1px solid #fff; /* bordure blanche à droite de chaque élément */
+    border-top : 1px solid #fff;
+    border-radius: 10px; /*bord arrondit*/
+
